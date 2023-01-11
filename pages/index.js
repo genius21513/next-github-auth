@@ -8,7 +8,9 @@ import { useSession, signIn, signOut } from 'next-auth/react'
 export default function Home() {
   const { data: session } = useSession();
 
-  // console.log(process.env.NEXTAUTH_URL);
+  // console.log('NEXTAUTH_URL', process.env.NEXTAUTH_URL);
+  // console.log('GITHUB_ID', process.env.GITHUB_ID);
+
   return (
     <>
       <Head>
